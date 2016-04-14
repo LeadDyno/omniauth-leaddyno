@@ -10,17 +10,17 @@ module OmniAuth
           :token_url     => '/oauth/access_token'
       }
 
-      uid{ raw_info['payload']['id'] }
+      uid{ raw_info['id'] }
 
       info do
         {
-            :email => raw_info['payload']['email'],
+            :email => raw_info['email'],
         }
       end
 
       extra do
         {
-            'raw_info' => raw_info['payload']
+            'raw_info' => raw_info
         }
       end
 
