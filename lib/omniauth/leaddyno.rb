@@ -1,7 +1,2 @@
-require "omniauth/leaddyno/version"
-
-module Omniauth
-  module Leaddyno
-    # Your code goes here...
-  end
-end
+require 'omniauth/leaddyno/version'
+require 'omniauth/strategies/leaddyno'
