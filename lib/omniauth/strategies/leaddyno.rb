@@ -3,7 +3,6 @@ require 'omniauth/strategies/oauth2'
 module OmniAuth
   module Strategies
     class Leaddyno < OmniAuth::Strategies::OAuth2
-      option :name, "leaddyno"
 
       option :client_options, {
           :site          => 'https://app.leaddyno.com',

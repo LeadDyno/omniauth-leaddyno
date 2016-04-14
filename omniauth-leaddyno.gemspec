@@ -5,12 +5,13 @@ require 'omniauth/leaddyno/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-leaddyno"
-  spec.version       = Omniauth::Leaddyno::VERSION
+  spec.version       = OmniAuth::Leaddyno::VERSION
   spec.authors       = ["Mike Machado"]
   spec.email         = ["mike@leaddyno.com"]
 
   spec.summary       = %q{LeadDyno strategy for OmniAuth.}
   spec.homepage      = "https://github.com/LeadDyno/omniauth-leaddyno"
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
